@@ -1,0 +1,23 @@
+
+
+  <section>
+    <div>
+      <header>
+        <div>Select transfer option</div>
+        <span>Showing results for March</span>
+      </header>
+
+      <nav>
+        <span routerLink="/transfer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Transfer to Other Banks</span>
+        <span routerLink="self" routerLinkActive="active">Transfer to Self</span>
+        <span routerLink="transfer-to-beneficiaries" routerLinkActive="active">Transfer to Beneficiaries</span>
+        <span routerLink="ease-account" routerLinkActive="active">Transfer to @ease accounts</span>
+        <span routerLink="history" routerLinkActive="active">Transation History</span>
+      </nav>
+    </div>
+
+    <div class="main">
+     <router-outlet></router-outlet>
+    </div>
+  </section>
+
